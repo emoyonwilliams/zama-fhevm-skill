@@ -5,14 +5,17 @@ A production-ready skill file that enables AI coding agents (Claude Code, Cursor
 AI coding agents have no built-in knowledge of FHE or FHEVM. This skill bridges that gap — giving any AI agent the context, patterns, and guardrails it needs to help developers build confidential applications correctly.
 
 ## File Structure
+
+```
 zama-fhevm-skill/
-├── SKILL.md                    ← main skill file (start here)
+├── SKILL.md                 ← main skill file (start here)
 ├── references/
-│   ├── frontend.md             ← fhevmjs SDK, EIP-712 decryption, public decryption
-│   └── erc7984.md              ← ERC-7984 confidential token standard
+│   ├── frontend.md          ← fhevmjs SDK, EIP-712 decryption, public decryption
+│   └── erc7984.md           ← ERC-7984 confidential token standard
 └── examples/
-├── FHECounter.sol          ← minimal working FHEVM contract
-└── ERC7984Token.sol        ← production-ready confidential token
+    ├── FHECounter.sol       ← minimal working FHEVM contract
+    └── ERC7984Token.sol     ← production-ready confidential token
+```
 
 ## How to Use
 Drop `SKILL.md` into your AI coding environment (Claude Code, Cursor, Windsurf) and prompt naturally:
